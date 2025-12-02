@@ -48,7 +48,6 @@ export const metadata: Metadata = {
       es: "https://construccion-app.vercel.app",
     },
   },
-    generator: 'v0.app'
 }
 
 export default function RootLayout({
