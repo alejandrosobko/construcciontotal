@@ -1,4 +1,3 @@
-// minimalist footer showing "Created by Alejandro Sobko" with a link to www.alejandrosobko.com
 const Footer = () => {
   return (
     <footer className="py-2 bg-muted">
@@ -10,7 +9,7 @@ const Footer = () => {
               href="https://www.alejandrosobko.com"
               target="_blank"
               rel="noreferrer"
-              className="text-primary-primary hover:text-accent transition-colors duration-200"
+              className="text-primary underline hover:text-accent transition-colors duration-200"
             >
               Alejandro Sobko
             </a>
