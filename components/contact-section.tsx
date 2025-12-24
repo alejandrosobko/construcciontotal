@@ -17,6 +17,7 @@ export function ContactSection() {
     message: "",
   })
   const [isSubmitted, setIsSubmitted] = useState(false)
+  const [submitting, setSubmitting] = useState(false)
 
   const handleInputChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -30,12 +31,20 @@ export function ContactSection() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    // Simulate form submission
+    setSubmitting(true)
+    const formData = new FormData(e.target as HTMLFormElement)
+    fetch("https://formspree.io/f/xgowbedv", {
+      method: "POST",
+      body: formData,
+    })
+
+    setSubmitting(false)
     setIsSubmitted(true)
+
     setTimeout(() => {
       setIsSubmitted(false)
       setFormData({ name: "", email: "", phone: "", message: "" })
-    }, 3000)
+    }, 5000)
   }
 
   return (
@@ -207,9 +216,10 @@ export function ContactSection() {
 
                   <Button
                     type="submit"
-                    className="w-full bg-primary text-primary-foreground hover:bg-primary/90 text-lg py-3 group cursor-pointer"
+                    className="w-full bg-primary text-primary-foreground hover:bg-primary/90 text-lg py-3 group cursor-pointer "
+                    disabled={submitting}
                   >
-                    Enviar Mensaje
+                    {submitting ? "Enviando..." : "Enviar Mensaje"}
                     <Send className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                   </Button>
                 </form>
