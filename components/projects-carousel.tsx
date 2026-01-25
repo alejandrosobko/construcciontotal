@@ -15,48 +15,45 @@ import Image5 from "../public/assets/electricidad/9.webp"
 const projects = [
   {
     id: 1,
-    title: "Residencia Moderna Los Altos",
-    location: "Los Altos, CA",
+    title: "Residencia Moderna",
+    location: "Zona Sur, Buenos Aires",
     date: "2025",
     image: Image1.src,
     description:
-      "Casa unifamiliar de 350m² con diseño contemporáneo y tecnología domótica integrada.",
+      "Casa unifamiliar de 350m² con diseño moderno y remodelación completa.",
   },
   {
     id: 2,
-    title: "Centro Comercial Plaza Norte",
-    location: "Ciudad de México",
+    title: "Centro Comercial",
+    location: "Capital Federal, Buenos Aires",
     date: "2025",
     image: Image2.src,
     description:
-      "Complejo comercial de 5,000m² con 50 locales comerciales y estacionamiento subterráneo.",
+      "Complejo comercial. Remodelación completa con trabajos integrales.",
   },
   {
     id: 3,
-    title: "Remodelación Villa Esperanza",
-    location: "Guadalajara, MX",
+    title: "Remodelación de comercio",
+    location: "Buenos Aires",
     date: "2025",
     image: Image3.src,
-    description:
-      "Renovación completa de casa colonial manteniendo elementos arquitectónicos originales.",
+    description: "Renovación completa de salón para comercio.",
   },
   {
     id: 4,
-    title: "Edificio Corporativo TechHub",
-    location: "Monterrey, MX",
+    title: "Casa moderna",
+    location: "Zona Sur, Buenos Aires",
     date: "2025",
     image: Image4.src,
-    description:
-      "Torre de oficinas de 15 pisos con certificación LEED y espacios de trabajo colaborativo.",
+    description: "Compleja contrucción de casa con quincho y piscina.",
   },
   {
     id: 5,
-    title: "Conjunto Residencial Jardines",
-    location: "Puebla, MX",
+    title: "Instalación de electricidad",
+    location: "Zona Sur, Buenos Aires",
     date: "2025",
     image: Image5.src,
-    description:
-      "Desarrollo habitacional de 25 casas con áreas verdes y amenidades comunitarias.",
+    description: "Desarrollo de instalación de electricidad.",
   },
 ]
 
@@ -71,7 +68,7 @@ export function ProjectsCarousel() {
 
   const prevSlide = () => {
     setCurrentIndex(
-      (prevIndex) => (prevIndex - 1 + projects.length) % projects.length
+      (prevIndex) => (prevIndex - 1 + projects.length) % projects.length,
     )
   }
 
@@ -94,7 +91,7 @@ export function ProjectsCarousel() {
 
   const prevModalSlide = () => {
     setModalIndex(
-      (prevIndex) => (prevIndex - 1 + projects.length) % projects.length
+      (prevIndex) => (prevIndex - 1 + projects.length) % projects.length,
     )
   }
 
