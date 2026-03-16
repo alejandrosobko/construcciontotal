@@ -2,12 +2,12 @@
 
 import type React from "react"
 
-import { useState } from "react"
 import { Button } from "@/components/ui/button"
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Phone, Mail, MapPin, Clock, Send, CheckCircle } from "lucide-react"
+import { CheckCircle, Clock, MapPin, Phone, Send } from "lucide-react"
+import { useState } from "react"
 
 export function ContactSection() {
   const [formData, setFormData] = useState({
@@ -20,7 +20,7 @@ export function ContactSection() {
   const [submitting, setSubmitting] = useState(false)
 
   const handleInputChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   ) => {
     const { name, value } = e.target
     setFormData((prev) => ({
@@ -91,9 +91,9 @@ export function ContactSection() {
                       Dirección
                     </h4>
                     <p className="text-muted-foreground">
-                      Argentina, Buenos Aires.
+                      Buenos Aires, Zona Sur.
                       <br />
-                      Zona sur y alrededores
+                      Atención en Quilmes, Bernal y Berazategui.
                     </p>
                   </div>
                 </div>

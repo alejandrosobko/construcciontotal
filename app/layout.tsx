@@ -9,15 +9,18 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://construcciontotal.com.ar"),
   title: {
     default:
-      "Servicios Profesionales de Construcción | Residencial y Comercial",
-    template: "%s | Construcción Profesional",
+      "Albañilería, Herrería y Aires Acondicionados en Zona Sur | Construcción Total",
+    template: "%s | Construcción Total",
   },
   description:
-    "Empresa de construcción con servicios residenciales, comerciales, remodelaciones, acabados de lujo y construcción general. Más de 20 años de experiencia.",
+    "Especialistas en albañilería, herrería e instalación de aires acondicionados. Brindamos servicios en Quilmes, Bernal, Berazategui y toda la Zona Sur. Presupuestos sin cargo.",
   keywords: [
-    "construcción",
-    "servicios de construcción",
-    "construcción residencial",
+    "albañilería zona sur",
+    "herrería zona sur",
+    "instalación aires acondicionados",
+    "construcción quilmes",
+    "albañil bernal",
+    "herrero berazategui",
     "construcción integral",
     "remodelaciones",
   ],
@@ -25,24 +28,24 @@ export const metadata: Metadata = {
     type: "website",
     locale: "es_ES",
     url: "https://construcciontotal.com.ar",
-    siteName: "Construcción Profesional",
-    title: "Servicios Profesionales de Construcción",
+    siteName: "Construcción Total",
+    title: "Albañilería, Herrería y Aires Acondicionados en Zona Sur",
     description:
-      "Empresa de construcción especializada en proyectos residenciales, comerciales y generales.",
+      "Especialistas en albañilería, herrería e instalación de aires acondicionados en Quilmes, Bernal, Berazategui y Zona Sur.",
     images: [
       {
         url: "/assets/construccion/35.webp",
         width: 1200,
         height: 630,
-        alt: "Servicios de Construcción Profesional",
+        alt: "Servicios de Construcción en Zona Sur",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Servicios Profesionales de Construcción",
+    title: "Albañilería, Herrería y Aires Acondicionados en Zona Sur",
     description:
-      "Construcción de calidad para tus proyectos residenciales y comerciales",
+      "Especialistas en albañilería, herrería e instalación de aires acondicionados en Quilmes, Bernal, Berazategui y Zona Sur.",
     images: ["/assets/construccion/35.webp"],
   },
   alternates: {

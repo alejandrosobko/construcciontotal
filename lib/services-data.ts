@@ -19,22 +19,29 @@ export const servicesData: Service[] = [
     id: "1",
     slug: "construccion",
     icon: Home,
-    title: "Construcción Integral",
+    title: "Albañilería y Construcción",
     description:
-      "Casas familiares, duplex y locales con los más altos estándares de calidad.",
+      "Servicios de albañilería, refacciones, casas y locales con los más altos estándares de calidad.",
     fullDescription:
-      "Nos especializamos en la construcción de viviendas residenciales de calidad superior. Desde casas familiares hasta complejos locales, somos un equipo que garantiza que cada proyecto se ejecute con precisión, creatividad y atención al detalle. Utilizamos materiales premium y técnicas modernas para crear hogares que perduran generaciones.",
-    features: ["Diseño personalizado", "Hogares", "Locales", "Reparaciones"],
+      "Nos especializamos en servicios de albañilería general, refacciones y construcción de viviendas residenciales. Realizamos desde pequeños arreglos hasta obras completas. Brindamos servicios en Quilmes, Bernal, Berazategui y toda la Zona Sur, garantizando que cada proyecto se ejecute con precisión, creatividad y atención al detalle.",
+    features: [
+      "Albañilería en general",
+      "Refacciones integrales",
+      "Hogares y locales",
+      "Reparaciones",
+    ],
     image: "/assets/construccion/35.webp",
     seoTitle:
-      "Construcción Residencial Profesional | Casas y Condominios de Calidad",
+      "Albañilería y Construcción en Zona Sur | Quilmes, Bernal, Berazategui",
     seoDescription:
-      "Especialistas en construcción residencial. Casas unifamiliares, duplex y condominios con materiales premium.",
+      "Especialistas en albañilería y construcción en Zona Sur (Quilmes, Bernal, Berazategui). Refacciones, obras nuevas y arreglos generales con materiales premium.",
     seoKeywords: [
+      "albañilería",
+      "albañil zona sur",
+      "construcción quilmes",
+      "refacciones bernal",
+      "arreglos albañilería",
       "construcción residencial",
-      "casas construcción",
-      "condominios",
-      "viviendas de calidad",
     ],
   },
   {
@@ -54,15 +61,17 @@ export const servicesData: Service[] = [
       "Trabajos personalizados",
     ],
     image: "/herreria-logo.jpg",
-    seoTitle: "Herrería Profesional | Portones, Rejas y Estructuras Metálicas",
+    seoTitle:
+      "Herrería Profesional en Zona Sur | Portones, Rejas y Estructuras",
     seoDescription:
-      "Servicios de herrería para hogares y comercios. Rejas, portones, estructuras metálicas y trabajos personalizados con materiales de calidad.",
+      "Servicios de herrería en Quilmes, Bernal y Berazategui. Fabricación e instalación de rejas, portones, estructuras metálicas y trabajos personalizados.",
     seoKeywords: [
-      "herrería",
-      "portones",
-      "rejas",
+      "herrería zona sur",
+      "herrero quilmes",
+      "portones automatizados bernal",
+      "rejas berazategui",
       "estructuras metálicas",
-      "trabajos metálicos",
+      "trabajos de herrería",
     ],
   },
   {
@@ -109,15 +118,16 @@ export const servicesData: Service[] = [
       "Carga de gas",
     ],
     image: "/refrigeracion-logo.webp",
-    seoTitle: "Aire Acondicionado | Instalación, Reparación y Mantenimiento",
+    seoTitle: "Instalador de Aires Acondicionados en Zona Sur | Mantenimiento",
     seoDescription:
-      "Servicio profesional de aire acondicionado. Instalación, carga de gas, mantenimiento y reparación para hogares y comercios.",
+      "Instalación, carga de gas y reparación de aires acondicionados (split y ventana) en Quilmes, Bernal y Berazategui. Servicio profesional y garantizado.",
     seoKeywords: [
-      "aire acondicionado",
-      "refrigeración",
-      "carga de gas",
-      "instalación de split",
-      "mantenimiento de aire",
+      "instalación aire acondicionado",
+      "técnico aire acondicionado zona sur",
+      "carga de gas quilmes",
+      "reparación aires acondicionados",
+      "instalador split bernal",
+      "aire acondicionado berazategui",
     ],
   },
 ]
