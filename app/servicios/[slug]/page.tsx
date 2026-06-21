@@ -74,6 +74,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
   return (
     <main className="min-h-screen">
       <Navbar />
+      <ServiceJsonLd service={service} />
 
       {/* Hero Section */}
       <section className="relative h-96 w-full overflow-hidden bg-gradient-to-b from-primary/20 to-background">
@@ -206,5 +207,33 @@ export default async function ServicePage({ params }: ServicePageProps) {
 
       <Footer />
     </main>
+  )
+}
+
+// JSON-LD structured data for this Service page
+// Injects a Service schema describing this service and a Provider Organization
+// Note: this is rendered on the server side; the browser will include it in the DOM.
+function ServiceJsonLd({ service }: { service: any }) {
+  const ld = {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    name: service.title,
+    description: service.fullDescription,
+    url: `https://construcciontotal.com.ar/servicios/${service.slug}`,
+    image: service.image,
+    keywords: service.seoKeywords.join(', '),
+    provider: {
+      '@type': 'Organization',
+      name: 'Construcción Total',
+      url: 'https://construcciontotal.com.ar',
+      logo: 'https://construcciontotal.com.ar/construccion-logo.jpg',
+    },
+  }
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(ld) }}
+    />
   )
 }

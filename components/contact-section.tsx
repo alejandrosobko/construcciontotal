@@ -76,8 +76,10 @@ export function ContactSection() {
                     <h4 className="font-semibold text-foreground mb-1">
                       Teléfono
                     </h4>
-                    <p className="text-primary">
-                      <a href="tel:+5411315104050">+54 11315104050</a>
+                    <p className="text-primary hover:underline">
+                      <a href="https://wa.me/54911315104050" target="_blank" rel="noopener noreferrer">
+                        +54 11315104050
+                      </a>
                     </p>
                   </div>
                 </div>
